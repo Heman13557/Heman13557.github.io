@@ -145,3 +145,8 @@ b{
 @media(max-width:720px){
   
 }
+footer{
+  width:100%;
+  margin:0 auto;
+  align-text:center;
+}
