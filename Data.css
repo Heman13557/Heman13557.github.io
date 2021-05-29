@@ -1,5 +1,5 @@
 body{
-  background:linear-gradient(90deg,#FF5733,white,white,green);
+  background:linear-gradient(90deg,#FF5733,white,green);
 }
 #welcome-section{
   height:20vh;
@@ -150,5 +150,5 @@ footer{
   width:100%;
   margin:0 auto;
   align-text:center;
-  color:white;
+  color: purple;
 }
