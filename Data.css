@@ -1,5 +1,5 @@
 body{
-  background:linear-gradient(90deg,#FF5733,white,green);
+  background:linear-gradient(90deg,#FF5733,white,white,green);
 }
 #welcome-section{
   height:20vh;
