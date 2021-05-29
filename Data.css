@@ -1,5 +1,8 @@
+:root{
+  font-size: 16px;
+}
 body{
-  background:linear-gradient(90deg,#FF5733,white,green);
+  background:linear-gradient(60deg,green,white ,#FF5733);
 }
 #welcome-section{
   height:20vh;
@@ -38,7 +41,7 @@ display:block;
   border:0.1em transparent solid;
   border-radius:20%;
   margin:0.2em 0.25em;
-  border-padding: 0.5em 0.5em;
+  border-spacing: 0.5em 0.5em;
 
 }
  .head{
@@ -57,7 +60,7 @@ display:block;
   padding: 0.2em 0.5em;
    
   animation: butt 1s;
-  transition: box-shadow 1.25s,box-color 1.25s, background 1s;
+  transition: box-shadow 0.8s,box-color 0.8s, background 1s;
 }
 @keyframes butt{
 100%{
@@ -74,9 +77,11 @@ display:block;
 }
 
 .project-tile a{
-  color: hsl(314,100%,54%);
+  color: rgb(255, 92, 217);
   display:inline;
   text-decoration:none;
+  text-shadow: 0 0 0.3em green;
+  margin-left: 2rem;
 
   
   
@@ -98,7 +103,7 @@ display:block;
   width:16em;
   border: 0.15em brown solid;
   border-radius:30%;
-  border-padding:10em;
+  border-spacing:10em;
   align:center;
     border-color:white #FF5733 white green;
   box-shadow: 0em 0em 0.8em 0.3em skyblue;
@@ -114,41 +119,47 @@ display:block;
   font-size:1.5em;
   font-family: 'Sigmar One', cursive;
   color:Royalblue;
-  border: 0.1em transparent solid;
+  border:0.1em transparent solid;
+  border-radius: 25%;
+  transition: background 0.25s, color 0.25s;
    
+}
+#profile-name:hover{
+  background: royalblue;
+  color: aliceblue;
 }
 b{
   font-size:1.75em;
   font-family:'noto sans jp';
   border-bottom: 0.1em transparent solid;
 }
+b:hover{
+  text-shadow: 0 0 0.5em black;
+  color: aliceblue;
+}
 #project{
   font-size: 3em;
 }
-#profile-link{
-  max-width:3em;
+#profile-link img{
+  max-width:2.5em;
   width:100%;
   font-size:2em;
   text-decoration:none;
-  color:skyblue;
+  color:rgb(38, 194, 255);
   display:block;
   margin-left:auto;
   margin-right:auto;
-  align-text:center;
-  border-radius:20%;
+  text-align:center;
+  border-top-left-radius:15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;;
 }
-#profile-link:hover{
-  text-shadow: 0 0 0.1em black;
-  background:linear-gradient(90deg,green ,#FF5733);
+#profile-link img:hover{
+  
+  background:linear-gradient(45deg,white ,#FF5733);
   
 }
 @media(max-width:720px){
   
-}
-footer{
-  max-width:5vh;
-  width:100%;
-  margin:0 auto;
-  align-text:center;
-  color: purple;
 }
