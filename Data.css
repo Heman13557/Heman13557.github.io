@@ -146,6 +146,7 @@ b{
   
 }
 footer{
+  max-width:3em;
   width:100%;
   margin:0 auto;
   align-text:center;
