@@ -5,7 +5,8 @@ let bod = document.querySelector("body");
 let sww = document.querySelector(".switch input");
 const toggleA  = document.querySelector(".bars");
 const navA = document.querySelector(".nav-links");
-
+const hirebt = document.getElementById("hire");
+const form = document.querySelector(".myform")
 toggleA.addEventListener('click',()=>{
     console.log("F");
     navA.classList.toggle("active");
@@ -68,3 +69,8 @@ function complete(){
    clearInterval(timer);
    timer = null;
 }
+
+hirebt.addEventListener("click",()=>{
+   form.classList.toggle("forms");
+
+})
