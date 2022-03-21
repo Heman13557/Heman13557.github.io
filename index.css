@@ -14,11 +14,12 @@
 body{
     margin:0;
     padding: 0;
+    
     background:var(--bla);
     color:var(--coll);
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
   
 }
 
@@ -175,11 +176,11 @@ transition: all 0.5s ;
   color: var(--coll);
   height: 85vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   
 
-  font-size: 5vmin;
+  font-size: 2.5rem;
 
 }
 .Ima{
@@ -250,14 +251,26 @@ transition: all 0.5s ;
     color: var(--pri);
   }
 }
+.project{
+  padding-top: 10vmin;
+}
 
 .project .headP{
   height: 10vh;
-  font-size: 4rem;
-  margin-top: 100px;
-  
+  font-size: 3.75rem;
+  font-weight: 600;
+width: fit-content;
+  margin:0 auto;
+  display: flex;
+justify-content: space-around;
+align-items: center;
+  padding-bottom: 0.5rem;
   text-align: center;
-
+  border-bottom: 0.25rem solid var(--bla);
+transition:all 0.15s ease-out;
+}
+.headP:hover{
+ border-color: var(--pri);
 }
 
 ::-webkit-scrollbar {
@@ -401,7 +414,10 @@ filter: hue-rotate(95deg); }
 .section3{
   display: flex;
   justify-content: center;
+  
+  padding-top: 10vh;
   margin-top: 10vh;
+  padding-bottom: 5vh;
 }
 .skills{
   font-size: 400%;
@@ -443,6 +459,7 @@ footer{
     cursor: default;
 }
 
+
 .switch {
   position: relative;
   display: block;
@@ -453,6 +470,7 @@ footer{
   float: right;
   margin-bottom: 1rem;
 }
+
 
 .slider:before {
   position: absolute;
@@ -502,6 +520,7 @@ input:checked + .slider:before {
   
   
 }
+
 .cover  .ico img{
 
   height:120px;
@@ -631,7 +650,7 @@ nav{
   left:30%;
   text-align: center;
   animation: dashing 0.7s cubic-bezier(1, -0.09, 0.49, 1.25);
-  ;
+  
 }
 
 @keyframes dashing {
@@ -677,4 +696,159 @@ nav{
     margin-left: 1rem;
   }
 }
+.section4{
+  position: relative;
+  min-height: 100VH;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bla);
+  filter: contrast(85%);
+}
+.section4 .headP1{
+   height: 10vh;
+  font-size: 3.75rem;
+  font-weight: 50%;
+width: fit-content;
+padding-top: 5vh;
+  margin:0 auto;
+  display: flex;
+justify-content: space-around;
+align-items: center;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--bla);
+transition:all 0.15s ease-out;
+}
+.headP1:hover{
+  border-color: var(--pri);
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.myimg{
+  position: relative;
+ background-color: var(--pri);
+  border-radius: 100%;
+  overflow: hidden;
+  filter: grayscale(95%);
+  margin-left: 5vmin;
+}
+.myimg img{
+  filter:grayscale(90%);
+  transform: translateY(0.5rem);
+  transition: all 1s;
 
+}
+
+
+
+
+.passage{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+#hire{
+  font-size: 2rem;
+  font-family: "poppins";
+  color: var(--pri);
+  background-color: transparent;
+  padding: 0 1rem;
+  background-position: bottom;
+  border: none;
+  border-radius: 0 1.15rem 0 1.15rem ;
+  border-bottom: var(--pri) solid 0.1rem;
+  transition: 0.25s all;
+}
+#hire:hover{
+  transform: scale(1.05);
+  
+  background-color: var(--pri);
+  color: white;
+  background-position: right;
+}
+.myform{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  justify-content: space-around;
+  transition: 0.25s all;
+  position: relative;
+  left: 50vmin;
+  background: 10% var(--pri);
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.45rem 0.5rem 0rem rgba(255, 255, 255, 0.4);
+
+  
+}
+#myform input,textarea::placeholder{
+  padding-left: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(61, 61, 61);
+  
+  
+
+}
+#myform input,textarea{
+  font-size: 1.15rem;
+  border-radius: 0.5rem;
+  width: 100%;
+ 
+}
+#myform>button{
+  width: fit-content;
+  font-family: "kanit";
+  border-radius: 2rem;
+  font-size: 1.15rem;
+}
+.forms{
+  display: flex;
+}
+@media (orientation:portrait) {
+  .about{
+    flex-direction: column;
+    gap: 2rem;
+    
+  }
+  .myform{
+    left: 0;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+  }
+  .section4 .headP1{
+    padding-top: 5vh;
+    
+    
+  }
+  .passage{
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  #myform input,textarea::placeholder{
+  padding-left: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(61, 61, 61);
+  
+  
+
+}
+#myform input,textarea{
+  font-size: 2.5rem;
+ 
+}
+#myform>button{
+  
+  font-size: 2.5rem;
+}
+.myform{
+  gap:2rem;
+}
+}
