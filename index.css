@@ -753,7 +753,14 @@ transition:all 0.15s ease-out;
   width: 60%;
   text-align: center;
   margin: 0 auto;
+  
 }
+.passage p{
+    font-weight: lighter;
+  }
+  .passage p code{
+    font-size: 120%;
+  }
 #hire{
   font-size: 2rem;
   font-family: "poppins";
@@ -826,13 +833,18 @@ transition:all 0.15s ease-out;
   }
   .section4 .headP1{
     padding-top: 5vh;
-    
-    
+ 
   }
   .passage{
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 80%;
+
+    
   }
+   .passage p code{
+    font-size: 110%;
+  }
+  
   #myform input,textarea::placeholder{
   padding-left: 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
