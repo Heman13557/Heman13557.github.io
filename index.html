@@ -59,7 +59,7 @@
     <div class="headP">PROJECTS</div> 
     <div class="block">
         <div class="python">
-            <div class="cover"><div class="ico"><img src="python.png" alt="img" height="90px" width="90px"></div></div>
+            <div class="cover"><div class="ico"><img src="images/python.png" alt="img" height="90px" width="90px"></div></div>
             <div class="project-list">
                 <ul>
                     
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="Javascript">
-            <div class="cover"><div class="ico"><img src="js.png" alt="img" height="90px" width="90px"></div></div>
+            <div class="cover"><div class="ico"><img src="images/js.png" alt="img" height="90px" width="90px"></div></div>
             <div class="project-list">
                 <ul>
                     <li><a href=#>Project 1</a></li>
@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="cplus">
-            <div class="cover"><div class="ico"><img src="c++.png" alt="img" height="90px" width="90px"></div></div>
+            <div class="cover"><div class="ico"><img src="images/c++.png" alt="img" height="90px" width="90px"></div></div>
             <div class="project-list">
                 <ul>
                     <li><a href=#>Project 1</a></li>
@@ -116,15 +116,18 @@
 <div class="section4" id="about">
     <div class="headP1">About Me</div>
     <div class="about">
-        <div class="myimg"><img src="myimg.png" height="320px" width="320px" alt="My Image"></div>
+        <div class="myimg"><img src="images/myimg.png" height="320px" width="320px" alt="My Image"></div>
         <div class="passage"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi reprehenderit suscipit minima expedita beatae, magni quidem incidunt, exercitationem quaerat repellendus voluptatum modi facilis aperiam quibusdam debitis tempora ullam ea harum? Possimus rem accusamus aut! Odio mollitia nulla doloribus omnis fuga sint similique autem quia corrupti necessitatibus blanditiis quo veritatis alias deserunt pariatur dolorem minima obcaecati, esse ipsa ipsam earum quibusdam iure cum architecto? Similique, voluptates?</p></div>
         
         </div>
         <button id="hire">Hire Me</button>
-    <form action="https://formspree.io/f/xbjwkezg" method="POST" id="myform" class="myform">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" name="" id="" placeholder="Email" required>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <form action="https://formsubmit.co/66f4a0d8e504200a4907303af6ba4681" method="POST" id="myform" class="myform">
+        <input type="text" placeholder="Your Name" name="name" required id="name">
+        <input type="hidden" name="_subject" value="New Query!">
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="hidden" name="_autoresponse" value="Hi there I'll be connecting with you shortly">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="hidden" name="_next" value="https://heman13557.github.io/pages/thanks.html">
         <button type="submit">Submit</button>
     </form>
 </div>
@@ -132,6 +135,7 @@
 <footer>
     &copy;Hemant Kahariyana
 </footer>
+    
 <script src="index.js" defer></script>
 
 </body>
